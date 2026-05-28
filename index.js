@@ -28,6 +28,15 @@ app.get('/usuarios/:id', (req, res)=> {
 
 app.get('/produtos/:nome', (req, res)=> {
   res.send('produto' + req.params.nome);});
+
+app.get('/filmes/:id/:nome', (req, res)=>{
+  const filmes = {id:req.params.id, nome:req.params.nome};
+
+  res.json(filmes)
+})
+
+
+  
   
 
 app.listen(

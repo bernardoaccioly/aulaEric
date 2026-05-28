@@ -22,7 +22,10 @@ app.get ('/erro', (req, res) => {
 app.get('/inicio', (req, res) => {
   res.redirect('/5');});
 
-  
+
+app.get('/usuarios/:id', (req, res)=> { 
+  res.send('usuario' + req.params.id);});
+
 
 app.listen(
     3000, 

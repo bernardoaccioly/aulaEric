@@ -26,6 +26,9 @@ app.get('/inicio', (req, res) => {
 app.get('/usuarios/:id', (req, res)=> { 
   res.send('usuario' + req.params.id);});
 
+app.get('/produtos/:nome', (req, res)=> {
+  res.send('produto' + req.params.nome);});
+  
 
 app.listen(
     3000, 

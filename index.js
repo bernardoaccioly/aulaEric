@@ -5,6 +5,11 @@ app.get('/', (req, res) => {
   res.send('Bem vindo ao servidor!!!!');
 });
 
+app.get('/sobre', (req, res) => {
+  res.send('Atividade Eric, questão 2!');
+});
+
+
 app.listen(
     3000, 
     () => console.log(`Servidor em execução`)
